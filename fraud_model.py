@@ -21,10 +21,20 @@ accuracy = model.score(X_test, y_test)
 print("Model Accuracy:", accuracy)
 
 # Predict new transaction
-new_transaction = [[6000, 2, 1, 12]]  # Example input
+amount = float(input("Enter amount: "))
+location = int(input("Enter location (1=home,2=other,3=unknown): "))
+foreign = int(input("Foreign transaction? (1=yes,0=no): "))
+frequency = int(input("Transaction frequency: "))
+
+import pandas as pd
+new_transaction = pd.DataFrame([[amount, location, foreign, frequency]],columns=X.columns)
+#predict
 prediction = model.predict(new_transaction)
+prob = model.predict_proba(new_transaction)
 
 if prediction[0] == 1:
     print(" Fraud Detected")
 else:
     print(" Safe Transaction")
+    
+print("Fraud Probability:", prob[0][1])
