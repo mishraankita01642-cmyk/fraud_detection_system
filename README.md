@@ -62,26 +62,26 @@ Fraud Probability (e.g., 0.87)
 6. Model predicts fraud or safe transaction
 
 
-##Challenges Faced
+## Challenges Faced
 Handling input in terminal
 File path issues
 Data format warnings
 Understanding ML concepts
 
-##Future Improvements
+## Future Improvements
 Use real-world datasets
 Improve model accuracy
 Add GUI or web interface
 Deploy the system online
 
 
-##Author
+## Author
 
 Ankita
 B.Tech CSE Core
 
 
-##Conclusion
+## Conclusion
 
 This project demonstrates how machine learning can be used to detect fraudulent transactions efficiently. It highlights the importance of AI in solving real-world financial problems.
 
