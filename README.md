@@ -35,6 +35,7 @@ cd fraud-detection-system
 pip install pandas scikit-learn
 
 3.How to Run the Project
+
 Run the Python file:
 python fraud_model.py
 
